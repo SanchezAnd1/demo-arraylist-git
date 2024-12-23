@@ -27,6 +27,17 @@ public class Util {
         }
         return cityMinLength;
     }
+
+    static public String findCityByFirstLetter(ArrayList<String> cities, char firstLetter) {
+        String tempChar = "" + firstLetter;
+
+        for (String city : cities) {
+            if (city.toLowerCase().charAt(0) == tempChar.toLowerCase().charAt(0)) {
+                return city;
+            }
+        }
+        return "";
+    }
 }
 
 
