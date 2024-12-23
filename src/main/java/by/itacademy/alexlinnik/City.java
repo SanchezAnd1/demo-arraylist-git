@@ -11,5 +11,6 @@ public class City {
         city.add("New York");
         city.add("Grodno");
         System.out.println(city);
+        city.set(3, "Piter");
     }
 }
